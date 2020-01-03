@@ -1,0 +1,18 @@
+{#{{ qs }}#}
+{##}
+{#{'paginator': None,#}
+{#'page_obj': None, '#}
+{#is_paginated': False,#}
+{#'object_list': <QuerySet [<Product: T-shirt>, <Product: Hat>]>,#}
+{#'product_list': <QuerySet [<Product: T-shirt>, <Product: Hat>]>,#}
+{#'view': <products.views.ProductListView object at 0x000001B3D69750B8>}#}
+{##}
+{#{{paginator}}#}
+{#{{object_list}}#}
+
+{##doszlismy do tego ze to co przekazuje jakby ten class based view to obect_list, jako context, i te inne pozostale rzeczy tez#}
+{#ale nas interezuje object list#}
+{#{{ object_list }}#}
+{% for obj in object_list %}
+    {{ obj.title }} <br/>
+{% endfor %}
