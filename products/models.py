@@ -1,6 +1,8 @@
 from django.db import models
+from django.db.models.signals import pre_save, post_save
 import random
 import os
+from .utils import unique_slug_generator
 
 def get_filename_ext(filepath):
     base_name = os.path.basename(filepath)
@@ -43,6 +45,7 @@ class ProductManager(models.Manager):
 
 class Product(models.Model):
     title = models.CharField(max_length=120)
+    slug = models.SlugField(blank=True, unique=True) # unique zeby kazdy produkt mial inny slug
     description = models.TextField()
     price = models.DecimalField(decimal_places=2, max_digits=10,
                                 default=39.99)  # default trzeba zeby sie migracje robily do istniejacych juz obiektow tej tablicy ktore nie maja nowoutworzonej kolumny
@@ -55,5 +58,15 @@ class Product(models.Model):
     active = models.BooleanField(default=True)
 
     objects = ProductManager() # model.objects to jest zawsze menager tego modelu. To co tutaj robimy to nie nadpisanie go, a rozszerzenie, dodaje nowa metode do istniejacego menagera czyli do .objects
+
+    def get_absolute_url(self):
+        return f"/products/{self.slug}/"
+
     def __str__(self):  # zeby wyswietlalo ladnie a nie Product Object 1..
         return self.title
+
+def product_pre_save_receiver(sender, instance, *args, **kwargs): #robimy to aby zapobiec temu ze bedzie pusty slug, jak zapiszemy z pustym to sie doda randomowy
+    if not instance.slug:
+        instance.slug = unique_slug_generator(instance)
+
+pre_save.connect(product_pre_save_receiver, sender=Product) #zanim sie zapisze obiekt, to wywoluje cos takiego chyba
