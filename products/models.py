@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.db.models.signals import pre_save, post_save
 import random
 import os
@@ -56,11 +57,13 @@ class Product(models.Model):
                                             #do uploadowanie wiekszych plikow jest jakas inna technika amazon cos tam, to tylko na male
     featured = models.BooleanField(default=False)
     active = models.BooleanField(default=True)
+    timestamp = models.DateTimeField(auto_now_add=True)
 
     objects = ProductManager() # model.objects to jest zawsze menager tego modelu. To co tutaj robimy to nie nadpisanie go, a rozszerzenie, dodaje nowa metode do istniejacego menagera czyli do .objects
 
     def get_absolute_url(self):
-        return f"/products/{self.slug}/"
+        # return f"/products/{self.slug}/"
+        return reverse("products:detail", kwargs={"slug": self.slug})
 
     def __str__(self):  # zeby wyswietlalo ladnie a nie Product Object 1..
         return self.title

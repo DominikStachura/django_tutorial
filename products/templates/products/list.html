@@ -13,6 +13,19 @@
 {##doszlismy do tego ze to co przekazuje jakby ten class based view to obect_list, jako context, i te inne pozostale rzeczy tez#}
 {#ale nas interezuje object list#}
 {#{{ object_list }}#}
-{% for obj in object_list %}
-    <a href="{{ obj.get_absolute_url }}"> {{ obj.title }}</a> <br/>
-{% endfor %}
+
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            {% for obj in object_list %}
+                <div class="col">
+                    {% include 'products/snippets/card.html' with instance=obj %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    {#    zakomentowane bo teraz wyswietlamy za pomoca bootstrap card#}
+    {#    <a href="{{ obj.get_absolute_url }}"> {{ obj.title }}</a> <br/>#}
+{% endblock %}

@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% include 'base/css.html' %}
-{#    jesli gdzies jest zdefiniowany base_head to sie doda, jak nie to nie#}
+    {#    jesli gdzies jest zdefiniowany base_head to sie doda, jak nie to nie#}
     {% block base_head %}{% endblock %}
 </head>
 <body>
-{% include 'base/navbar.html' %}
-{% block content %}{% endblock %}
+    {% include 'base/navbar.html' with brand_name='eCommerce'%}
+    {% block content %}{% endblock %}
 
-{% include 'base/js.html' %}
+    {% include 'base/js.html' %}
 </body>
 </html>

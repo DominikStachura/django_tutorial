@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem;">
+    {% if instance.image %}
+        <img src="{{instance.image.url}}" class="card-img-top" alt="{{ instance.title }} logo">
+    {% endif %}
+  <div class="card-body">
+    <h5 class="card-title">{{instance.title}}</h5>
+    <p class="card-text">{{instance.description|truncatewords:12}}</p>
+    <a href="{{ instance.get_absolute_url }}" class="btn btn-primary">View</a>
+
+{#      drugi sposob na button, bez hardkodowania np jak url sie zmieni z products na product tot ez bedzie dzialac, ale jest jeszcze lepszy sposob na dstanie linku po stronie models#}
+{#      <a href="{% url 'detail' slug=instance.slug %}" class="btn btn-primary">View URL</a>#}
+  </div>
+</div>

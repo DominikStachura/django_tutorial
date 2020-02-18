@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e398fc-8d68-43aa-b8ad-87aa569f2890" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_ecommerce/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecommerce/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/templates/products/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/templates/products/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static_my_proj/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static_my_proj/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact/view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home_page.html" afterDir="false" />
-    </list>
+    <list default="true" id="35e398fc-8d68-43aa-b8ad-87aa569f2890" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/products/templates/products" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django_youtube" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -134,7 +121,12 @@
       <workItem from="1577647555995" duration="1242000" />
       <workItem from="1577733830184" duration="3720000" />
       <workItem from="1577993021905" duration="13882000" />
-      <workItem from="1578153981291" duration="4564000" />
+      <workItem from="1578153981291" duration="6125000" />
+      <workItem from="1578497310374" duration="33000" />
+      <workItem from="1578947508543" duration="6117000" />
+      <workItem from="1579035469935" duration="1755000" />
+      <workItem from="1579721326149" duration="10000" />
+      <workItem from="1582057315883" duration="1196000" />
     </task>
     <servers />
   </component>
@@ -146,20 +138,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="601" y="286" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1576438020998" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1577993060130">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1582057332779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1577647597462" />
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577993060130" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1582057332779" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578497339035" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1578002534067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1578002534067" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578154064149">
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1579721327342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1578154064149" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577993056094" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1579721327342" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578497324081" />
     <state x="758" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576790339510">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
