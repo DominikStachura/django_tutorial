@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e398fc-8d68-43aa-b8ad-87aa569f2890" name="Default Changelist" comment="" />
+    <list default="true" id="35e398fc-8d68-43aa-b8ad-87aa569f2890" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/search/templates/search/snippets/search-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search/templates/search/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecommerce/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecommerce/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecommerce/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecommerce/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecommerce/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/auth/login_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/auth/login_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/auth/register_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/auth/register_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home_page.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +67,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django_youtube" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -126,7 +145,17 @@
       <workItem from="1578947508543" duration="6117000" />
       <workItem from="1579035469935" duration="1755000" />
       <workItem from="1579721326149" duration="10000" />
-      <workItem from="1582057315883" duration="1196000" />
+      <workItem from="1582057315883" duration="2469000" />
+      <workItem from="1582730064058" duration="6976000" />
+      <workItem from="1583007028803" duration="8550000" />
+      <workItem from="1583262619062" duration="9000" />
+      <workItem from="1583352887035" duration="1931000" />
+      <workItem from="1583437094563" duration="9004000" />
+      <workItem from="1583535013266" duration="17212000" />
+      <workItem from="1585256853092" duration="6692000" />
+      <workItem from="1585413018195" duration="108000" />
+      <workItem from="1585478763918" duration="10483000" />
+      <workItem from="1586295922473" duration="2273000" />
     </task>
     <servers />
   </component>
@@ -134,35 +163,28 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="601" y="286" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1576438020998">
+    <state x="740" y="274" width="714" height="650" key="FileChooserDialogImpl" timestamp="1585413118404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="601" y="286" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1576438020998" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1582057332779">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1582057332779" />
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578497339035" />
+    <state x="740" y="274" width="714" height="650" key="FileChooserDialogImpl/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1585413118404" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583262626553" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1578002534067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1578002534067" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1579721327342">
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1585413025034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1579721327342" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578497324081" />
-    <state x="758" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576790339510">
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1585413025034" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583262619534" />
+    <state x="-1487" y="53" width="1503" height="805" maximized="true" key="dock-window-1" timestamp="1583446574824">
+      <screen x="-1680" y="8" width="1680" height="1010" />
+    </state>
+    <state x="-1487" y="53" width="1503" height="805" maximized="true" key="dock-window-1/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1583446574824" />
+    <state x="656" y="257" width="820" height="678" key="find.popup" timestamp="1586297754318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="758" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1576790339510" />
-    <state x="656" y="257" width="607" height="536" key="find.popup" timestamp="1578158040859">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="656" y="257" width="607" height="536" key="find.popup/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1578158040859" />
-    <state width="600" height="424" key="javadoc.popup" timestamp="1576620523013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="600" height="424" key="javadoc.popup/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1576620523013" />
+    <state x="656" y="257" width="820" height="678" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586297754318" />
+    <state x="656" y="257" width="820" height="678" key="find.popup/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1585260830444" />
   </component>
 </project>

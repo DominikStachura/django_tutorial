@@ -1,4 +1,5 @@
 from django.conf.urls import url
+from django.urls import path
 
 from .views import product_list_view, ProductListView, product_detail_view, ProductDetailView, \
     ProductFeaturedDetailView, ProductFeaturedListView, ProductDetailSlugView
@@ -17,6 +18,7 @@ urlpatterns = [
     # url(r'^featured/$', ProductFeaturedListView.as_view()),
     # url(r'^featured/(?P<pk>\d+)/$', ProductFeaturedDetailView.as_view())
     url(r'^$', ProductListView.as_view(), name='list'), #usuniete jest /products, bo w glownym urls to jest,a te dwa tu to to co po products/
-    url(r'^(?P<slug>[\w-]+)/$', ProductDetailSlugView.as_view(), name='detail')
+    # url(r'^(?P<slug>[\w-]+)/$', ProductDetailSlugView.as_view(), name='detail')
+    path('<slug:slug>/', ProductDetailSlugView.as_view(), name='detail')  # to znalazlem na internecie, chyba dziala tak samo a prosciej
 ]
 

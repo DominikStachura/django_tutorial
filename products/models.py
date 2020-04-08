@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from django.db.models.signals import pre_save, post_save
+from django.db.models import Q
 import random
 import os
 from .utils import unique_slug_generator
@@ -27,6 +28,14 @@ class ProductQuerySet(models.query.QuerySet): # to sa wszystkie operacje wywolyw
     def featured(self):
         return self.filter(featured=True, active=True)
 
+    def search(self, query):
+        # Q - do tworzenia skomplikowanych query
+        lookups = (Q(title__icontains=query) |
+                   Q(description__icontains=query) |
+                   Q(price__icontains=query) |
+                   Q(tag__title__icontains=query))
+        return self.filter(lookups).distinct()
+
 class ProductManager(models.Manager):
     def get_queryset(self): #przeciazam get_queryset dla Product, tym custom querysetems tworzonym u gory
         return ProductQuerySet(self.model, using=self._db)
@@ -42,6 +51,9 @@ class ProductManager(models.Manager):
         if QS.count() == 1:
             return QS.first()
         return None
+
+    def search(self, query):
+        return self.get_queryset().active().search(query)
 
 
 class Product(models.Model):

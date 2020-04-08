@@ -5,6 +5,7 @@ from .forms import ContactForm, LoginForm, RegisterForm
 
 
 def home_page(request):
+    r
     context = {"title": "Home page"}
     if request.user.is_authenticated:
         context["premium_content"] = "Premium for being logged in" #jeden sposob, mozna tez w templatce

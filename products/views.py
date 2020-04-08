@@ -75,6 +75,7 @@ def product_detail_view(request, pk=None, *args, **kwargs): #bez tego pk = None 
     #     raise Http404("Product doesn't exist")
 
 
+
     # ostateczna wersja, wykorzystujaca ta metode zaimplementowana po stronie modelu
     instance = Product.objects.get_by_id(pk)  # to metoda ktora stworzylismy po stronie menagera modelu
     if instance is None:
@@ -120,3 +121,4 @@ class ProductDetailSlugView(DetailView):
             raise Http404("Unknown error")
 
         return instance
+

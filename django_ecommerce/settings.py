@@ -24,7 +24,7 @@ SECRET_KEY = '&z^*=!nk6-wg$*w#xfa$$^(atnu109_4mtk=u!s(f&g_8xb@-('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #our apps
-    'products'
+    'products',
+    'search',
+    'tags',
+
 ]
 
 MIDDLEWARE = [
