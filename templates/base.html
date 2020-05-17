@@ -15,5 +15,94 @@
     {% block content %}{% endblock %}
 </div>
 {% include 'base/js.html' %}
+
+{#tutaj sie zaczynaja skrypty jquery#}
+<script>
+    $(document).ready(function () {
+        var productForm = $(".form-product-ajax") // . sie daje jak biore po klasie, tutaj ta klasas sluzy jako identyfikator
+
+        productForm.submit(function (event) {
+            event.preventDefault() // usuwa akcje domyslna dla submita
+            var thisForm = $(this) // zeby specific dla formy ktora oblsugujemy w danym momencie, a nie dla wszystkich tej klasy
+            {#var actionEndpoint = thisForm.attr('action'); // tutaj wazna informacja ze moglibysmy normalnie zdefiniowac osobny endpoint ktory by obslugiwal tego ajaxa#}
+            // ale pobieramy action i wykorzystujemy ten sam, na wypadek gdyby ktos ne mial aktywnego javascripta w przegladarce, wtedy zadziala po staremu
+            var actionEndpoint = thisForm.attr('data-endpoint'); // moge tez w naglowku forma zdefiniwoac dodatkowy endpoint
+            var httpMethod = thisForm.attr('method');
+            var formData = thisForm.serialize();
+
+            // i to juz robi tego requesta posta z wypelnionym formem, tylko async, nie przeladowuje strony ale wywoluje normalnie endpoint w view i ma dane w request.POST
+            $.ajax({
+                url: actionEndpoint,
+                method: httpMethod,
+                data: formData,
+                success: function (data) { // data to to co w odpowiedzi dostajemy
+                    {#console.log("success")#}
+                    {#console.log(data)#}
+
+                    var submitSpan = thisForm.find(".submit-span")
+                    if (data.addedd) {
+                        submitSpan.html('In cart <button type="submit" class="btn btn-link">Remove?</button>')
+                    } else {
+                        submitSpan.html('<button class="btn btn-success">Add to cart</button>')
+                    }
+                    var navbarCount = $(".navbar-cart-count")
+                    navbarCount.text('(' + data.cartItemCount + ')')
+                    var currentPath = window.location.href
+
+                    if (currentPath.indexOf("cart") != -1) { // if the link contains "cart"
+                        refreshCart()
+                    }
+
+                },
+                error: function (errorData) {
+                    {#console.log("error")#}
+                    {#console.log(errorData)#}
+                }
+            })
+
+            function refreshCart() {
+                console.log("in current cart")
+                var cartTable = $(".cart-table")
+                var cartBody = cartTable.find(".cart-body") // find bo to jest relted to carttable
+                {#cartBody.html("<h1>Changed</h1>")#}
+                var productRows = cartBody.find(".cart-product")
+                var currentUrl = window.location.href
+
+                var refreshCartUrl = "/api/cart/";
+                var refreshCartMethod = "GET";
+                var data = {};
+                $.ajax({
+                    url: refreshCartUrl,
+                    method: refreshCartMethod,
+                    data: data,
+                    success: function (data) {
+                        console.log('success')
+                        console.log(data)
+                        if (data.products.length > 0) {
+                            productRows.html(" ") // najpierw czyscimy wszystkie wyniki
+                            $.each(data.products, function (index, value) {
+                                cartBody.prepend("<tr><th scope='row'>" + eval(index+1) +
+                                    "</th><td>"+value.name+"</td><td>"+value.price+"</td></tr>")
+                            })
+
+
+                            cartBody.find(".cart-subtotal").text(data.subtotal)
+                            cartBody.find(".cart-total").text(data.total)
+                        } else{
+                            window.location.href = currentUrl
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.log("error")
+                        console.log(xhr.responseText);
+                    }
+                })
+
+            }
+        })
+    })
+</script>
+
+
 </body>
 </html>

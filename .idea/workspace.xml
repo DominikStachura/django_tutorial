@@ -2,43 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e398fc-8d68-43aa-b8ad-87aa569f2890" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/search/templates/search/snippets/search-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/templates/search/view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carts/templates/carts/checkout-done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecommerce/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecommerce/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecommerce/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_ecommerce/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecommerce/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_ecommerce/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecommerce/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/templates/products/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/templates/products/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecommerce/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/auth/login_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/auth/login_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/auth/register_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/auth/register_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tags/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tags/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/auth/login_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/login_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/auth/register_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/register_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/js.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -59,7 +45,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -67,8 +52,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../do_magisterki" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -77,17 +63,65 @@
       <recent name="C:\Python_files\programy\django_ecommerce\templates\contact" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Python_files\programy\django_ecommerce\addresses\templates\addresses\snippets" />
+      <recent name="C:\Python_files\programy\django_ecommerce\accounts\templates\accounts" />
+      <recent name="C:\Python_files\programy\django_ecommerce\django_ecommerce" />
       <recent name="C:\Python_files\programy\django_ecommerce\static_my_proj\images" />
       <recent name="C:\Python_files\programy\django_ecommerce\templates\auth" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django Server.django_ecommerce">
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="django_ecommerce" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="django_ecommerce" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/carts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/carts/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="django_ecommerce" type="Python.DjangoServer" factoryName="Django server">
       <module name="django_ecommerce" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="django_ecommerce.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -105,18 +139,12 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+    <recent_temporary>
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <item itemvalue="Python.views" />
+        <item itemvalue="Python.scratch" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -155,23 +183,99 @@
       <workItem from="1585256853092" duration="6692000" />
       <workItem from="1585413018195" duration="108000" />
       <workItem from="1585478763918" duration="10483000" />
-      <workItem from="1586295922473" duration="2273000" />
+      <workItem from="1586295922473" duration="13709000" />
+      <workItem from="1586445369696" duration="131000" />
+      <workItem from="1586505522841" duration="30718000" />
+      <workItem from="1586730564882" duration="7723000" />
+      <workItem from="1586883220941" duration="5022000" />
+      <workItem from="1587060637424" duration="6294000" />
+      <workItem from="1587299373174" duration="9661000" />
+      <workItem from="1588452126884" duration="23860000" />
+      <workItem from="1588797134407" duration="2234000" />
+      <workItem from="1588875848249" duration="599000" />
+      <workItem from="1589139434663" duration="4282000" />
+      <workItem from="1589572151756" duration="3749000" />
+      <workItem from="1589730234222" duration="627000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" width="714" height="650" key="FileChooserDialogImpl" timestamp="1585413118404">
+    <state x="552" y="161" key="#Plugins" timestamp="1588542242886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" width="714" height="650" key="FileChooserDialogImpl/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1585413118404" />
+    <state x="552" y="161" key="#Plugins/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1588542242886" />
+    <state x="552" y="161" key="#Plugins/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586697176393" />
+    <state x="877" y="362" width="810" height="614" key="#xdebugger.evaluate" timestamp="1586731408385">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="877" y="362" width="810" height="614" key="#xdebugger.evaluate/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586731408385" />
+    <state x="740" y="274" width="714" height="650" key="FileChooserDialogImpl" timestamp="1589730250237">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" width="714" height="650" key="FileChooserDialogImpl/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1589730250237" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586883442380" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583262626553" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1578002534067">
+    <state width="1877" height="211" key="GridCell.Tab.0.bottom" timestamp="1588621759570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1578002534067" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586344359875" />
+    <state width="1877" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1588621759570" />
+    <state width="1877" height="251" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586731990940" />
+    <state width="1877" height="217" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586812727403" />
+    <state width="1877" height="211" key="GridCell.Tab.0.center" timestamp="1588621759570">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586344359875" />
+    <state width="1877" height="211" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1588621759570" />
+    <state width="1877" height="251" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586731990939" />
+    <state width="1877" height="217" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586812727403" />
+    <state width="1877" height="211" key="GridCell.Tab.0.left" timestamp="1588621759569">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586344359875" />
+    <state width="1877" height="211" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1588621759569" />
+    <state width="1877" height="251" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586731990939" />
+    <state width="1877" height="217" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586812727403" />
+    <state width="1877" height="211" key="GridCell.Tab.0.right" timestamp="1588621759570">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586344359875" />
+    <state width="1877" height="211" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1588621759570" />
+    <state width="1877" height="251" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586731990940" />
+    <state width="1877" height="217" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586812727403" />
+    <state width="1877" height="217" key="GridCell.Tab.1.bottom" timestamp="1588522556458">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="217" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1588522556458" />
+    <state width="1877" height="217" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586731411270" />
+    <state width="1877" height="217" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586812727403" />
+    <state width="1877" height="217" key="GridCell.Tab.1.center" timestamp="1588522556458">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="217" key="GridCell.Tab.1.center/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1588522556458" />
+    <state width="1877" height="217" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586731411270" />
+    <state width="1877" height="217" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586812727403" />
+    <state width="1877" height="217" key="GridCell.Tab.1.left" timestamp="1588522556458">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="217" key="GridCell.Tab.1.left/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1588522556458" />
+    <state width="1877" height="217" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586731411270" />
+    <state width="1877" height="217" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586812727403" />
+    <state width="1877" height="217" key="GridCell.Tab.1.right" timestamp="1588522556458">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="217" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1588522556458" />
+    <state width="1877" height="217" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586731411270" />
+    <state width="1877" height="217" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586812727403" />
+    <state x="912" y="124" key="SettingsEditor" timestamp="1588542653116">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586337070825" />
+    <state x="912" y="124" key="SettingsEditor/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1588542653116" />
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586713440680" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1585413025034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -181,10 +285,32 @@
       <screen x="-1680" y="8" width="1680" height="1010" />
     </state>
     <state x="-1487" y="53" width="1503" height="805" maximized="true" key="dock-window-1/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1583446574824" />
-    <state x="656" y="257" width="820" height="678" key="find.popup" timestamp="1586297754318">
+    <state x="809" y="240" width="820" height="678" key="find.popup" timestamp="1588453436981">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="257" width="820" height="678" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586297754318" />
-    <state x="656" y="257" width="820" height="678" key="find.popup/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1585260830444" />
+    <state x="809" y="240" width="820" height="678" key="find.popup/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1588453436981" />
+    <state x="656" y="257" width="820" height="678" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586889342994" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589143884557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586343785836" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1680.8.1680.1010@0.0.1920.1040" timestamp="1588800031598" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589143884557" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/carts/views.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/django_ecommerce$views.coverage" NAME="views Coverage Results" MODIFIED="1586714955715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/carts" />
+    <SUITE FILE_PATH="coverage/django_ecommerce$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1586555267104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
 </project>

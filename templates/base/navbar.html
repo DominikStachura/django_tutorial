@@ -1,7 +1,10 @@
 {% url 'home' as Home %}
 {% url 'contact' as Contact %}
 {% url 'login' as Login %}
+{% url 'logout' as Logout %}
+{% url 'register' as Register %}
 {% url 'products:list' as Products %}
+{% url 'cart:home' as Cart %}
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
     <div class="container">
@@ -28,29 +31,37 @@
                 <li class="nav-item {% if request.path == Products %}active{% endif %}">
                     <a class="nav-link" href="{{ Products }}">Products</a>
                 </li>
+
+
                 {% if request.user.is_authenticated %}
                     <li class="nav-item {% if request.path == Login %}active{% endif %}">
-                        <a class="nav-link" href="{{ Login }}">Logout</a>
+                        <a class="nav-link" href="{{ Logout }}">Logout</a>
                     </li>
                 {% else %}
                     <li class="nav-item {% if request.path == Login %}active{% endif %}">
                         <a class="nav-link" href="{{ Login }}">Login</a>
                     </li>
-                    <li class="nav-item {% if request.path == Login %}active{% endif %}">
-                        <a class="nav-link" href="{{ Login }}">Register</a>
+                    <li class="nav-item {% if request.path == Register %}active{% endif %}">
+                        <a class="nav-link" href="{{ Register }}">Register</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
+                    {#                    <li class="nav-item dropdown">#}
+                    {#                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"#}
+                    {#                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+                    {#                            Dropdown link#}
+                    {#                        </a>#}
+                    {#                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">#}
+                    {#                            <a class="dropdown-item" href="#">Action</a>#}
+                    {#                            <a class="dropdown-item" href="#">Another action</a>#}
+                    {#                            <a class="dropdown-item" href="#">Something else here</a>#}
+                    {#                        </div>#}
+                    {#                    </li>#}
                 {% endif %}
+                <li class="nav-item {% if request.path == Cart %}active{% endif %}">
+                    <a class="nav-link" href="{{ Cart }}"><i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="navbar-cart-count">
+                        ({{ request.session.cart_items }})
+                        </span></a>
+                </li>
             </ul>
             {% include 'search/snippets/search-form.html' %}
         </div>

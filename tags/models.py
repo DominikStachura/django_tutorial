@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 from django.db.models.signals import pre_save
 
-from products.utils import unique_slug_generator
+from django_ecommerce.utils import unique_slug_generator
 from products.models import Product
 
 class Tag(models.Model):
